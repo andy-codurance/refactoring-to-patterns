@@ -1,6 +1,6 @@
 ﻿namespace ReplaceConstructors.Before
 {
-    public abstract class CapitalStrategy
+    abstract class CapitalStrategy
     {
     }
 }

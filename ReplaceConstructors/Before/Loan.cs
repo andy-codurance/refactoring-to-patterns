@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Loan
+    class Loan
     {
         private readonly CapitalStrategy capitalStrategy;
         private readonly double commitment;
