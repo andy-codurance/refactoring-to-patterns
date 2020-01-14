@@ -18,7 +18,7 @@
             : this(commitment, 0.0, riskRating, maturity, expiry) {}
         
         public Loan(double commitment, double outstanding, int riskRating, DateTime? maturity, DateTime? expiry)
-            :this(null, commitment, outstanding, riskRating, maturity, expiry) {}
+            : this(null, commitment, outstanding, riskRating, maturity, expiry) {}
         
         public Loan(CapitalStrategy capitalStrategy, double commitment, int riskRating, DateTime? maturity, DateTime? expiry)
             : this(capitalStrategy, commitment, 0.0, riskRating, maturity, expiry) {}

@@ -26,30 +26,30 @@
         public Loan(double notional,
             double outstanding,
             int rating,
-            DateTime? maturity,
-            DateTime? expiry)
+            DateTime? expiry,
+            DateTime? maturity)
         {
             this.strategy = new RevolvingTermROC();
             this.notional = notional;
             this.outstanding = outstanding;
             this.rating = rating;
-            this.maturity = maturity;
             this.expiry = expiry;
+            this.maturity = maturity;
         }
         
         public Loan(CapitalStrategy strategy,
             double notional,
             double outstanding,
             int rating,
-            DateTime? maturity,
-            DateTime? expiry)
+            DateTime? expiry,
+            DateTime? maturity)
         {
+            this.strategy = strategy;
             this.notional = notional;
             this.outstanding = outstanding;
             this.rating = rating;
-            this.maturity = maturity;
             this.expiry = expiry;
-            this.strategy = strategy;
+            this.maturity = maturity;
         }
         
         public string TypeOfLoan()
